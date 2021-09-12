@@ -1,7 +1,9 @@
-export default function Page() {
-  return (
-    <div>
-      <p>I am a component</p>
-    </div>
-  );
+import PropTypes from 'prop-types';
+
+export default function Page({ children }) {
+  return <div>{children}</div>;
 }
+
+Page.propTypes = {
+  children: PropTypes.any,
+};
